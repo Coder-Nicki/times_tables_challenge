@@ -1,6 +1,7 @@
 from random import randint
 import time
 
+# Game Mode: Different levels with increasing difficulty
 def round_one():
     correct_count = 0
     incorrect_count = 0
@@ -203,6 +204,23 @@ def round_ten():
                 print('Sorry you are out of the game! Better luck next time!')
                 continue
 
+# Practice mode
+def easy_practise():
+    correct_count = 0
+    incorrect_count = 0
+    num1 = randint(1, 10)
+    num2 = randint(1, 10)
+    answer = int(input(f'{num1} * {num2} = '))
+    while answer != 'quit':
+        if num1 * num2 == answer:
+            correct_count += 1
+            continue
+        else:
+            incorrect_count +=1
+            continue
+
+
+# Main code block
 name = input('What is your name: ')
 
 print(f'Welcome {name} to the timesTables Challenge!')
@@ -217,5 +235,12 @@ if mode == 'g' or mode == 'G':
     print('Let\'s start round one!')
     time.sleep(3)
     round_one()
+else:
+    practice_mode = input('What level do you want to practise?\n- Easy[e]\n- Medium[m]\n- Hard[h]\n')
+    if practice_mode == 'e':
+        print('Okay. Great Choice! Let\'s get ready to begin!\nAnytime you want to end the game please type in [quit]')
+        time.sleep(3)
+        easy_practise()
+
 
 
