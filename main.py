@@ -5,11 +5,16 @@ import time
 
 # Main code block
 name = input('What is your name: ')
-print(f'Welcome {name} to the timesTables Challenge!')
-time.sleep(1)
 print('')
+print(f'Welcome {name} to the timesTables Challenge!')
+print('')
+time.sleep(1)
 print('Please choose a mode:')
+print('')
+time.sleep(1)
 mode = input('- Game mode [press g]\n- Practice mode [press p]: ')
+time.sleep(2)
+print('')
 if mode == 'g' or mode == 'G':
     print('')
     print('GET READY')
@@ -18,25 +23,13 @@ if mode == 'g' or mode == 'G':
     time.sleep(3)
     game_mode.round_one()
 else:
-    practice_mode = input('What level do you want to practise?\n- Easy[e]\n- Medium[m]\n- Hard[h]\n')
-    if practice_mode == 'e':
+    difficulty = input('What level do you want to practise?\n- Easy[e]\n- Medium[m]\n- Hard[h]\n')
+    print('')
+    if difficulty == 'e' or difficulty == 'E':
         practice_mode.easy_practise()
-        print('Okay. Great Choice! Let\'s get ready to begin!\nAnytime you want to end the game please type in [quit]')
-        practice_mode.easy_practise()
-        print(f'Well done you got {correct_count} answers right and made {incorrect_count} answers wrong!')
-    elif practice_mode == 'm':
-        print('Okay. Great Choice! Let\'s get ready to begin!\nAnytime you want to end the game please type in [quit]')
-        time.sleep(3)
+    elif difficulty == 'm' or difficulty == 'M':
         practice_mode.medium_practise()
-        print(f'Well done you got {correct_count} answers right and made {incorrect_count} answers wrong!')
-    elif practice_mode == 'h':
-        print('Okay. Great Choice! Let\'s get ready to begin!\nAnytime you want to end the game please type in [quit]')
-        time.sleep(3)
+    elif difficulty == 'h' or difficulty == 'H':
         practice_mode.hard_practise()
-        print(f'Well done you got {correct_count} answers right and made {incorrect_count} answers wrong!')
-    else:
-        print('Please type in a letter for your choice of practice level, [e], [m] or [h]: ')
-
-
-
-
+    # else: (Need to factor in user pressing something else)
+    #     print('Please type [e], [m] or [h] to choose your difficulty level.')

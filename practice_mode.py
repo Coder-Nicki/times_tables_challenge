@@ -1,51 +1,74 @@
 from random import randint
 import time
 
-def hello():
-    print('hello')
-
-# Practice mode
 def easy_practise():
     correct_count = 0
     incorrect_count = 0
-    num1 = randint(1, 7)
-    num2 = randint(1, 7)
-    answer = int(input(f'{num1} * {num2} = '))
-    while answer != 'quit':
-        if num1 * num2 == answer:
+    while correct_count < 100:
+        num1 = randint(1, 7)
+        num2 = randint(1, 7)
+        answer = input(f'{num1} * {num2} = ')
+        if answer == 'quit':
+            if correct_count > 20 and incorrect_count < 3:
+                print(f'You are AMAZING! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            elif correct_count == 100:
+                print(f'You are a champion! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            else:
+                print(f'You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+        elif num1 * num2 == int(answer):
             correct_count += 1
             continue
         else:
-            incorrect_count +=1
+            incorrect_count += 1
             continue
-    return correct_count and incorrect_count
 
 def medium_practise():
     correct_count = 0
     incorrect_count = 0
-    num1 = randint(1, 12)
-    num2 = randint(1, 12)
-    answer = int(input(f'{num1} * {num2} = '))
-    while answer != 'quit':
-        if num1 * num2 == answer:
+    while correct_count < 100:
+        num1 = randint(1, 12)
+        num2 = randint(1, 12)
+        answer = input(f'{num1} * {num2} = ')
+        if answer == 'quit':
+            if correct_count > 20 and incorrect_count < 3:
+                print(f'You are AMAZING! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            elif correct_count == 100:
+                print(f'You are a champion! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            else:
+                print(f'You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+        elif num1 * num2 == int(answer):
             correct_count += 1
             continue
         else:
-            incorrect_count +=1
+            incorrect_count += 1
             continue
-    return correct_count and incorrect_count
 
 def hard_practise():
     correct_count = 0
     incorrect_count = 0
-    num1 = randint(10, 10)
-    num2 = randint(10, 10)
-    answer = int(input(f'{num1} * {num2} = '))
-    while answer != 'quit':
-        if num1 * num2 == answer:
+    while correct_count < 100:
+        num1 = randint(1, 100)
+        num2 = randint(1, 100)
+        answer = input(f'{num1} * {num2} = ')
+        if answer == 'quit':
+            if correct_count > 20 and incorrect_count < 3:
+                print(f'You are AMAZING! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            elif correct_count == 100:
+                print(f'You are an absolute times table genius! You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+            else:
+                print(f'You got {correct_count} correct and made {incorrect_count} error/s!')
+                break
+        elif num1 * num2 == int(answer):
             correct_count += 1
             continue
         else:
-            incorrect_count +=1
+            incorrect_count += 1
             continue
-    return correct_count and incorrect_count
