@@ -2,7 +2,6 @@ import game_mode
 import practice_mode
 import time
 
-
 # Main code block
 name = input('What is your name: ')
 print('')
@@ -13,7 +12,6 @@ print('Please choose a mode:')
 print('')
 time.sleep(1)
 mode = input('- Game mode [press g]\n- Practice mode [press p]: ')
-time.sleep(2)
 print('')
 if mode == 'g' or mode == 'G':
     print('')
@@ -24,6 +22,9 @@ if mode == 'g' or mode == 'G':
     game_mode.round_one()
 else:
     difficulty = input('What level do you want to practise?\n- Easy[e]\n- Medium[m]\n- Hard[h]\n')
+    print('')
+    print('Get ready!')
+    time.sleep(2)
     print('')
     if difficulty == 'e' or difficulty == 'E':
         practice_mode.easy_practise()

@@ -1,6 +1,8 @@
 from random import randint
 import time
 
+# Practice mode functions
+
 def easy_practise():
     correct_count = 0
     incorrect_count = 0
