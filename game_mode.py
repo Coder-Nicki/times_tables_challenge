@@ -6,6 +6,7 @@ import time
 def round_one():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 5)
         num2 = randint(1, 5)
@@ -19,12 +20,18 @@ def round_one():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 1!')
-                round_two()
+                duration = round(time.time() - start_time, 2)
+                if duration < 20.00:
+                    print(f'Well done you have completed round 1 in {duration} seconds!')
+                    round_two()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
@@ -32,6 +39,7 @@ def round_one():
 def round_two():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 7)
         num2 = randint(1, 7)
@@ -45,20 +53,26 @@ def round_two():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 2!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 20.00:
+                    print(f'Well done you have completed round 2 in {duration} seconds!')
+                    round_two()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_three():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 10)
         num2 = randint(1, 10)
@@ -72,19 +86,26 @@ def round_three():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 3!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 20.00:
+                    print(f'Well done you have completed round 3 in {duration} seconds!')
+                    round_three()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
+
 def round_four():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 12)
         num2 = randint(1, 12)
@@ -99,19 +120,26 @@ def round_four():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 4!')
+                duration = round(time.time() - start_time, 2)
+                if duration < 40.00:
+                    print(f'Well done you have completed round 4 in {duration} seconds!')
+                    round_five()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_five():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 15)
         num2 = randint(1, 10)
@@ -125,20 +153,26 @@ def round_five():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 5!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 40.00:
+                    print(f'Well done you have completed round 5 in {duration} seconds!')
+                    round_six()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_six():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(15, 15)
         num2 = randint(15, 15)
@@ -152,20 +186,26 @@ def round_six():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 6!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 40.00:
+                    print(f'Well done you have completed round 6 in {duration} seconds!')
+                    round_seven()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_seven():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(20, 20)
         num2 = randint(20, 20)
@@ -179,20 +219,26 @@ def round_seven():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 7!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 60.00:
+                    print(f'Well done you have completed round 7 in {duration} seconds!')
+                    round_eight()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_eight():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(50, 50)
         num2 = randint(50, 50)
@@ -206,20 +252,27 @@ def round_eight():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 8!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 60.00:
+                    print(f'Well done you have completed round 8 in {duration} seconds!')
+                    round_nine()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
+
 
 def round_nine():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(100, 100)
         num2 = randint(100, 100)
@@ -233,20 +286,26 @@ def round_nine():
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Well done you have completed round 9!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 120.00:
+                    print(f'Well done you have completed round 9 in {duration} seconds!')
+                    round_ten()
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
 
 def round_ten():
     correct_count = 0
     incorrect_count = 0
+    start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(12, 12)
         num2 = randint(12, 12)
@@ -261,13 +320,19 @@ def round_ten():
         if num1 * num2 * num3 == answer:
             correct_count += 1
             if correct_count == 10:
-                print('Woohoo!!!! Congratulations you have completed the entire challenge! You are a champion!')
-                return
+                duration = round(time.time() - start_time, 2)
+                if duration < 120.00:
+                    print(f'Woohoo!!!! Congratulations you have completed the entire challenge! You are a champion! You completed round 1 in {duration} seconds!')
+                    return
+                else:
+                    print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
+                    break
             else:
                 continue
                     
         else:
+            print('Incorrect answer')
             incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
-                continue
+
