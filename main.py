@@ -1,13 +1,16 @@
 import game_mode
 import practice_mode
 import time
+import clearing
 
 # Main code block
 name = input('What is your name: ')
+clearing.clear()
 print(f'Welcome {name} to the timesTables Challenge!')
 while True:
     mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]: ')
     if mode == 'g' or mode == 'G':
+        clearing.clear()
         print('GET READY')
         time.sleep(3)
         print('Let\'s start round one!')

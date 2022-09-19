@@ -6,10 +6,16 @@ import time
 def round_one():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while incorrect_count < 3:
         num1 = randint(1, 5)
         num2 = randint(1, 5)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+            except ValueError:
+                print('Input must be an integer')
+            else:
+                break
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -17,7 +23,7 @@ def round_one():
                 round_two()
             else:
                 continue
-                
+                    
         else:
             incorrect_count += 1
             if incorrect_count == 3:
@@ -27,10 +33,16 @@ def round_one():
 def round_two():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while incorrect_count < 3:
         num1 = randint(1, 7)
         num2 = randint(1, 7)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+            except ValueError:
+                print('Input must be an integer')
+            else:
+                break
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -38,19 +50,50 @@ def round_two():
                 round_three()
             else:
                 continue
+                    
         else:
-            incorrect_count +=1
+            incorrect_count += 1
             if incorrect_count == 3:
                 print('Sorry you are out of the game! Better luck next time!')
                 continue
 
+# def round_two():
+#     correct_count = 0
+#     incorrect_count = 0
+#     while correct_count < 3:
+#         num1 = randint(1, 7)
+#         num2 = randint(1, 7)
+#         while True:
+#             try: 
+#                 answer = int(input(f'{num1} * {num2} = '))
+#                 break
+#             except ValueError:
+#                 print('Input must be an integer')
+#         if num1 * num2 == answer:
+#             correct_count += 1
+#             if correct_count == 10:
+#                 print('Well done you have completed round 2!')
+#                 round_three()
+#             else:
+#                 continue
+#         else:
+#             incorrect_count +=1
+#             if incorrect_count == 3:
+#                 print('Sorry you are out of the game! Better luck next time!')
+#                 break
+
 def round_three():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 10)
         num2 = randint(1, 10)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -67,10 +110,15 @@ def round_three():
 def round_four():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 10)
         num2 = randint(1, 10)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -87,10 +135,15 @@ def round_four():
 def round_five():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 12)
         num2 = randint(1, 12)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -107,10 +160,15 @@ def round_five():
 def round_six():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 15)
         num2 = randint(1, 15)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -127,10 +185,15 @@ def round_six():
 def round_seven():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 20)
         num2 = randint(1, 20)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -147,10 +210,15 @@ def round_seven():
 def round_eight():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(10, 20)
         num2 = randint(10, 20)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -167,10 +235,15 @@ def round_eight():
 def round_nine():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(10, 100)
         num2 = randint(10, 100)
-        answer = int(input(f'{num1} * {num2} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 == answer:
             correct_count += 1
             if correct_count == 10:
@@ -187,11 +260,16 @@ def round_nine():
 def round_ten():
     correct_count = 0
     incorrect_count = 0
-    while correct_count < 10:
+    while correct_count < 3:
         num1 = randint(1, 12)
         num2 = randint(1, 12)
         num3 = randint(1, 12)
-        answer = int(input(f'{num1} * {num2} * {num3} = '))
+        while True:
+            try: 
+                answer = int(input(f'{num1} * {num2} = '))
+                break
+            except ValueError:
+                print('Input must be an integer')
         if num1 * num2 * num3 == answer:
             correct_count += 1
             if correct_count == 10:
