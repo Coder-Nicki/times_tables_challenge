@@ -1,5 +1,6 @@
 import game_mode
 import practice_mode
+import one_minute_mode
 import time
 import clearing
 from practice_mode import Practice
@@ -18,7 +19,7 @@ if __name__ == '__main__':
     while True:
         time.sleep(3)
         clearing.clear()
-        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- Exit [press e]\n ')
+        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- One Minute mode [press o]\n- Exit [press e]\n ')
         clearing.clear()
         if mode == 'g' or mode == 'G':
             print('GET READY...\n')
@@ -49,6 +50,9 @@ if __name__ == '__main__':
                     break
                 else:
                     print('Please type in a lowercase letter e, m or h')
+
+        elif mode == 'o' or mode =='O':
+            one_minute_mode.one_minute_race()
 
         elif mode == 'e' or mode == 'E':
             print('Thankyou for practising your multiplication skills!')

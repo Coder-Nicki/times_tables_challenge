@@ -15,6 +15,8 @@ The second feature is the 'Practice Mode'. Users can choose out of 3 difficulty 
 
 Time is a key feature of both modes. The time taken to answer questions is recorded and then printed back to the user. 
 
+The application also utilises a terminal menu so that the user can easily choose where they want to go in the application. 
+
 ## Implementation Plan
 
 ## Help Documentation
