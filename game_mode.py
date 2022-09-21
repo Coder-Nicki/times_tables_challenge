@@ -1,11 +1,14 @@
 from random import randint
 import time
+import clearing
 
 # Game Mode: Different levels with increasing difficulty
 
 def round_one():
     correct_count = 0
     incorrect_count = 0
+    print('Level 1: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 5)
@@ -23,6 +26,8 @@ def round_one():
                 duration = round(time.time() - start_time, 2)
                 if duration < 20.00:
                     print(f'Well done you have completed round 1 in {duration} seconds!')
+                    time.sleep(3)
+                    clearing.clear()
                     round_two()
                 else:
                     print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
@@ -39,6 +44,8 @@ def round_one():
 def round_two():
     correct_count = 0
     incorrect_count = 0
+    print('Level 2: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 7)
@@ -56,7 +63,7 @@ def round_two():
                 duration = round(time.time() - start_time, 2)
                 if duration < 20.00:
                     print(f'Well done you have completed round 2 in {duration} seconds!')
-                    round_two()
+                    round_three()
                 else:
                     print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
                     break
@@ -72,6 +79,8 @@ def round_two():
 def round_three():
     correct_count = 0
     incorrect_count = 0
+    print('Level 3: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 10)
@@ -89,7 +98,7 @@ def round_three():
                 duration = round(time.time() - start_time, 2)
                 if duration < 20.00:
                     print(f'Well done you have completed round 3 in {duration} seconds!')
-                    round_three()
+                    round_four()
                 else:
                     print(f'Sorry, your time of {duration} seconds was too slow. You are out of the game!')
                     break
@@ -105,6 +114,8 @@ def round_three():
 def round_four():
     correct_count = 0
     incorrect_count = 0
+    print('Level 4: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 12)
@@ -139,6 +150,8 @@ def round_four():
 def round_five():
     correct_count = 0
     incorrect_count = 0
+    print('Level 5: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(1, 15)
@@ -172,6 +185,8 @@ def round_five():
 def round_six():
     correct_count = 0
     incorrect_count = 0
+    print('Level 6: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(15, 15)
@@ -205,6 +220,8 @@ def round_six():
 def round_seven():
     correct_count = 0
     incorrect_count = 0
+    print('Level 7: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(20, 20)
@@ -238,6 +255,8 @@ def round_seven():
 def round_eight():
     correct_count = 0
     incorrect_count = 0
+    print('Level 8: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(50, 50)
@@ -272,6 +291,8 @@ def round_eight():
 def round_nine():
     correct_count = 0
     incorrect_count = 0
+    print('Level 9: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(100, 100)
@@ -305,6 +326,8 @@ def round_nine():
 def round_ten():
     correct_count = 0
     incorrect_count = 0
+    print('Level 10: \n')
+    time.sleep(2)
     start_time = time.time()
     while incorrect_count < 3:
         num1 = randint(12, 12)

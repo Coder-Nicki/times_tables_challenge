@@ -18,7 +18,7 @@ if __name__ == '__main__':
     while True:
         time.sleep(3)
         clearing.clear()
-        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- Exit Application [press e]\n ')
+        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- Exit [press e]\n ')
         clearing.clear()
         if mode == 'g' or mode == 'G':
             print('GET READY...\n')
