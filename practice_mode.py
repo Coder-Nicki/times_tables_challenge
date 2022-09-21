@@ -41,9 +41,9 @@ class Practice:
         num2 = randint(self.x, self.y)
         return num1, num2 
 
-easy = Practice(1, 7)
-medium = Practice(1, 12)
-hard = Practice(1, 20)
+# easy = Practice(1, 7)
+# medium = Practice(1, 12)
+# hard = Practice(1, 20)
 
-easy.practise_mode()
+# easy.practise_mode()
 

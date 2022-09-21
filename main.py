@@ -2,6 +2,12 @@ import game_mode
 import practice_mode
 import time
 import clearing
+from practice_mode import Practice
+
+# Practice mode objects for each difficulty level
+easy = Practice(1, 7)
+medium = Practice(1, 12)
+hard = Practice(1, 20)
 
 # Main code block
 if __name__ == '__main__':
@@ -12,7 +18,7 @@ if __name__ == '__main__':
     while True:
         time.sleep(3)
         clearing.clear()
-        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n ')
+        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- Exit Application [press e]\n ')
         clearing.clear()
         if mode == 'g' or mode == 'G':
             print('GET READY...\n')
@@ -33,16 +39,22 @@ if __name__ == '__main__':
                 time.sleep(3)
                 clearing.clear()
                 if difficulty == 'e' or difficulty == 'E':
-                    practice_mode.easy_practise()
+                    easy.practise_mode()
                     break
                 elif difficulty == 'm' or difficulty == 'M':
-                    practice_mode.medium_practise()
+                    medium.practise_mode()
                     break
                 elif difficulty == 'h' or difficulty == 'H':
-                    practice_mode.hard_practise()
+                    hard.practise_mode()
                     break
                 else:
                     print('Please type in a lowercase letter e, m or h')
+
+        elif mode == 'e' or mode == 'E':
+            print('Thankyou for practising your multiplication skills!')
+            time.sleep(10)
+            break
+
         else:
             print(f"Please type a lowercase 'g' or 'p'")
 
