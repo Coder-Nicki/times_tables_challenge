@@ -32,55 +32,14 @@ if __name__ == '__main__':
     while True:
         time.sleep(3)
         clearing.clear()
-        menu.main()
-        print('GET READY...\n')
-        time.sleep(2)
-        print('Let\'s start round one!')
-        time.sleep(2)
-        clearing.clear()
-            
-        while True:
-            result = level_one.game_play()
-            if result == False:
-                break
-            result = level_two.game_play()
-            if result == False:
-                break
-            result = level_three.game_play()
-            if result == False:
-                break
-            result = level_four.game_play()
-            if result == False:
-                break
-            result = level_five.game_play()
-            if result == False:
-                break
-            result = level_six.game_play()
-            if result == False:
-                break
-            result = level_seven.game_play()
-            if result == False:
-                break
-            result = level_eight.game_play()
-            if result == False:
-                break
-            result = level_nine.game_play()
-            if result == False:
-                break
-            result = level_ten.game_play()
-            if result == False:
-                break
-            time.sleep(3)
-        
-        mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- One Minute mode [press o]\n- Exit [press e]\n ')
-        clearing.clear()
-        if mode == 'g' or mode == 'G':
+        choice = menu.main()
+        if choice == 'Game Mode':
             print('GET READY...\n')
             time.sleep(2)
             print('Let\'s start round one!')
             time.sleep(2)
             clearing.clear()
-            
+                
             while True:
                 result = level_one.game_play()
                 if result == False:
@@ -114,31 +73,31 @@ if __name__ == '__main__':
                     break
                 time.sleep(3)
 
-        elif mode == 'p' or mode == 'P':
+        elif choice == 'Practice Mode':
             while True:
-                difficulty = input('What level do you want to practise?\n- Easy[e]\n- Medium[m]\n- Hard[h]\n')
+                difficulty = menu.practice_level()
                 clearing.clear()
                 print('Let\'s get ready...\n')
                 time.sleep(1)
                 print('Please type [q] when you want to exit the practice mode')
                 time.sleep(3)
                 clearing.clear()
-                if difficulty == 'e' or difficulty == 'E':
+                if difficulty == 'Easy':
                     easy.practise_mode()
                     break
-                elif difficulty == 'm' or difficulty == 'M':
+                elif difficulty == 'Medium':
                     medium.practise_mode()
                     break
-                elif difficulty == 'h' or difficulty == 'H':
+                elif difficulty == 'Hard':
                     hard.practise_mode()
                     break
                 else:
                     print('Please type in a lowercase letter e, m or h')
 
-        elif mode == 'o' or mode =='O':
+        elif choice == 'One Minute Challenge':
             one_minute_mode.one_minute_race()
 
-        elif mode == 'e' or mode == 'E':
+        elif choice == 'Exit':
             print('Thankyou for practising your multiplication skills!')
             time.sleep(10)
             break
