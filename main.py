@@ -102,6 +102,3 @@ if __name__ == '__main__':
             time.sleep(10)
             break
 
-        else:
-            print(f"Please type a lowercase 'g' or 'p'")
-
