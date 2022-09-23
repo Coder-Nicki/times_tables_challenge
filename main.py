@@ -4,18 +4,19 @@ import time
 import clearing
 from practice_mode import Practice
 from game import gameMode
+import menu
 
 # Game mode objects for different levels
-level_one = gameMode('Level One', 1, 5)
-level_two = gameMode('Level Two', 1, 7)
-level_three = gameMode('Level Three', 1, 10)
-level_four = gameMode('Level Four', 1, 12)
-level_five = gameMode('Level Five', 1, 15)
-level_six = gameMode('Level Six', 1, 20)
-level_seven = gameMode('Level Seven', 10, 20)
-level_eight = gameMode('Level Eight', 10, 50)
-level_nine = gameMode('Level Nine', 10, 100)
-level_ten = gameMode('Level Ten', 1, 12)
+level_one = gameMode('Level One', 1, 5, 30)
+level_two = gameMode('Level Two', 1, 7, 30)
+level_three = gameMode('Level Three', 1, 10, 30)
+level_four = gameMode('Level Four', 1, 12, 30)
+level_five = gameMode('Level Five', 1, 15, 60)
+level_six = gameMode('Level Six', 1, 2, 60)
+level_seven = gameMode('Level Seven', 10, 20, 120)
+level_eight = gameMode('Level Eight', 10, 50, 120)
+level_nine = gameMode('Level Nine', 10, 100, 300)
+level_ten = gameMode('Level Ten', 10, 900, 600)
 
 # Practice mode objects for each difficulty level
 easy = Practice(1, 7)
@@ -31,6 +32,46 @@ if __name__ == '__main__':
     while True:
         time.sleep(3)
         clearing.clear()
+        menu.main()
+        print('GET READY...\n')
+        time.sleep(2)
+        print('Let\'s start round one!')
+        time.sleep(2)
+        clearing.clear()
+            
+        while True:
+            result = level_one.game_play()
+            if result == False:
+                break
+            result = level_two.game_play()
+            if result == False:
+                break
+            result = level_three.game_play()
+            if result == False:
+                break
+            result = level_four.game_play()
+            if result == False:
+                break
+            result = level_five.game_play()
+            if result == False:
+                break
+            result = level_six.game_play()
+            if result == False:
+                break
+            result = level_seven.game_play()
+            if result == False:
+                break
+            result = level_eight.game_play()
+            if result == False:
+                break
+            result = level_nine.game_play()
+            if result == False:
+                break
+            result = level_ten.game_play()
+            if result == False:
+                break
+            time.sleep(3)
+        
         mode = input('Please choose a mode: \n- Game mode [press g]\n- Practice mode [press p]:\n- One Minute mode [press o]\n- Exit [press e]\n ')
         clearing.clear()
         if mode == 'g' or mode == 'G':
@@ -39,20 +80,39 @@ if __name__ == '__main__':
             print('Let\'s start round one!')
             time.sleep(2)
             clearing.clear()
+            
             while True:
-                level_one.game_play()
-                # if l == False:
-                #     break
-                level_two.game_play()
-                level_three.game_play()
-                level_four.game_play()
-                level_five.game_play()
-                level_six.game_play()
-                level_seven.game_play()
-                level_eight.game_play()
-                level_nine.game_play()
-                level_ten.game_play()
-            time.sleep(3)
+                result = level_one.game_play()
+                if result == False:
+                    break
+                result = level_two.game_play()
+                if result == False:
+                    break
+                result = level_three.game_play()
+                if result == False:
+                    break
+                result = level_four.game_play()
+                if result == False:
+                    break
+                result = level_five.game_play()
+                if result == False:
+                    break
+                result = level_six.game_play()
+                if result == False:
+                    break
+                result = level_seven.game_play()
+                if result == False:
+                    break
+                result = level_eight.game_play()
+                if result == False:
+                    break
+                result = level_nine.game_play()
+                if result == False:
+                    break
+                result = level_ten.game_play()
+                if result == False:
+                    break
+                time.sleep(3)
 
         elif mode == 'p' or mode == 'P':
             while True:
