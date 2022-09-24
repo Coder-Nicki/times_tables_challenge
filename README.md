@@ -47,13 +47,13 @@ Two things to improve still are:
 |User gets 3 questions wrong| If user gets 3 questions wrong then they get a printed message and they are returned to the main menu|As expected|Nil|
 |User is too slow| If user's time is over the given time than they are exited from the game to the home menu|As expected|Nil|
 |The given times are all correct in each level. Check each level. |Each level has a certain time before they fail the level|As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
-|||As expected|Nil|
+|Terminal menu for practice mode|All items call the correct difficulty level|As expected|Nil|
+|Exit from practice mode|When the user types in 'q' they are exited from the mode back to the main menu|As expected|Nil|
+|End message|An end message is displayed with a correct and incorrect score count on user pressing 'q'|As expected|Nil|
+|User gets to 100 correct answers|User will be exited from practice mode difficulty level|As expected|Nil|
+|One minute time|In one minute challenge mode, the user can only answer questions for 1 minute|As expected|Nil|
+|Incorrect answer|If user enters an incorrect answer then they get the message 'wrong' before next question|As expected|Nil|
+|End message|An end message is displayed with how many correct and incorrect answers they got in one minute|As expected|Nil|
 
 
 ## Help Documentation
@@ -62,11 +62,13 @@ Two things to improve still are:
 
 2. In your terminal type in `git clone https://github.com/Coder-Nicki/times_tables_challenge`
 
-3. Next type in `cd src`
+3. Next type in `cd times_tables_challenge`
 
-4. Then type in `./wrapper.sh`. This command sets up your environment and installs any needed packages. It then starts the application. 
+5. Then change into the right folder `cd src`
 
-4. Enjoy using the timesTable_Challenge application.
+6. Then type in `./wrapper.sh`. This command sets up your environment and installs any needed packages. It then starts the application. 
+
+7. Enjoy using the timesTable_Challenge application.
 
 
 ## References
