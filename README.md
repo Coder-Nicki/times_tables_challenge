@@ -43,17 +43,17 @@ Two things to improve still are:
 |User is asked to input name | User's name appears on welcome message | As expected | Nil|
 |Main menu is linked to chosen mode| After the user presses on the item, a new screen opens up with chosen mode| As expected| Nil|
 | Exit mode exits out of the whole app| When user presses exit mode the app terminates| As expected | Nil|
-|In game mode, the user goes onto the next level when previous level is successfully achieved| Level one calls for level two. Level two calls for level 3, et cetera| As expected|Nil|
-|User gets 3 questions wrong| If user gets 3 questions wrong then they get a printed message and they are returned to the main menu|As expected|Nil|
-|User is too slow| If user's time is over the given time than they are exited from the game to the home menu|As expected|Nil|
-|The given times are all correct in each level. Check each level. |Each level has a certain time before they fail the level|As expected|Nil|
+|In game mode, the user goes onto the next level when previous level is successfully achieved| Game mode - Level one calls for level two. Level two calls for level 3, et cetera| As expected|Nil|
+|Game mode - User gets 3 questions wrong| If user gets 3 questions wrong then they get a printed message and they are returned to the main menu|As expected|Nil|
+|Game mode - User is too slow| If user's time is over the given time than they are exited from the game to the home menu|As expected|Nil|
+|Game mode - The given times are all correct in each level. Check each level. |Each level has a certain time before they fail the level|As expected|Nil|
 |Terminal menu for practice mode|All items call the correct difficulty level|As expected|Nil|
 |Exit from practice mode|When the user types in 'q' they are exited from the mode back to the main menu|As expected|Nil|
-|End message|An end message is displayed with a correct and incorrect score count on user pressing 'q'|As expected|Nil|
-|User gets to 100 correct answers|User will be exited from practice mode difficulty level|As expected|Nil|
+|Practice mode - End message|An end message is displayed with a correct and incorrect score count on user pressing 'q'|As expected|Nil|
+|Practice mode - User gets to 100 correct answers|User will be exited from practice mode difficulty level|As expected|Nil|
 |One minute time|In one minute challenge mode, the user can only answer questions for 1 minute|As expected|Nil|
-|Incorrect answer|If user enters an incorrect answer then they get the message 'wrong' before next question|As expected|Nil|
-|End message|An end message is displayed with how many correct and incorrect answers they got in one minute|As expected|Nil|
+|One minute mode - Incorrect answer|If user enters an incorrect answer then they get the message 'wrong' before next question|As expected|Nil|
+|One minute mode - End message|An end message is displayed with how many correct and incorrect answers they got in one minute|As expected|Nil|
 
 
 ## Help Documentation
