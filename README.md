@@ -55,6 +55,12 @@ Two things to improve still are:
 |One minute mode - Incorrect answer|If user enters an incorrect answer then they get the message 'wrong' before next question|As expected|Nil|
 |One minute mode - End message|An end message is displayed with how many correct and incorrect answers they got in one minute|As expected|Nil|
 
+## Unit Testing
+
+Please see `test_game.py`
+
+This tests that the numbers being multiplied give a correct answer.
+
 
 ## Help Documentation
 
