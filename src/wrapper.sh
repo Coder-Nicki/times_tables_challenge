@@ -1,5 +1,5 @@
 #!/bin/bash
-# First checks whether user has python3 installed
+# First checks whether user has python3 installed (python3 should also include pip)
 if [[ -x "$(command -v python3)" ]]
 then
     pyv="$(python3 -V)"
@@ -8,8 +8,8 @@ then
     # installs virtual environment, then required packages, then runs the application
         python3 -m venv .venv
         source .venv/bin/activate
-        pip install -r src/requirements.txt
-        python3 src/main.py
+        pip install -r requirements.txt
+        python3 main.py
     fi 
 else
     echo "You don't have python3, go get it! You can find it at https://www.python.org/downloads/" >&2

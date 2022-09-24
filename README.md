@@ -25,7 +25,12 @@ The application also utilises a terminal menu so that the user can easily choose
 
 [Trello board](https://trello.com/b/Q7epZ4TZ/timestables-challenge)
 
-The implementation of this application has gone according to plan. A flowchart was created first. Code was then written for each feature. Unit and manual tests started to be done. The README was updated. Then instructions and a bash script created for others to acces app.
+The implementation of this application has gone according to plan. A flowchart was created first. Code was then written for each feature. Unit and manual tests started to be done. The README was updated. Then instructions and a bash script created for others to access app.
+
+![](docs/trello_start.png)
+![](docs/trello_middle.png)
+![](docs/trello_end.png)
+![](docs/trello_checklist.png)
 
 Two things to improve still are: 
 
@@ -53,11 +58,11 @@ Two things to improve still are:
 
 ## Help Documentation
 
-1. First check that you have git installed on your terminal. Type in `git --version`. If it outputs a version continue to next step. Otherwise type in `sudo apt install git` and follow instructions.
+1. First check that you have git installed on your terminal. Type in `git --version`. If it outputs a version continue to next step. Otherwise go to `https://www.atlassian.com/git/tutorials/install-git` for help in installing git.
 
 2. In your terminal type in `git clone https://github.com/Coder-Nicki/times_tables_challenge`
 
-3. Next type in `cd times_tables_challenge`
+3. Next type in `cd src`
 
 4. Then type in `./wrapper.sh`. This command sets up your environment and installs any needed packages. It then starts the application. 
 
