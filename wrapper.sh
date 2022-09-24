@@ -6,8 +6,8 @@ then
     if [[ $pyv == "Python 3"* ]]
     then
     # installs virtual environment, then required packages, then runs the application
-        git clone https://github.com/Coder-Nicki/times_tables_challenge/
         python3 -m venv .venv
+        source .venv/bin/activate
         pip install -r src/requirements.txt
         python3 src/main.py
     fi 

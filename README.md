@@ -53,9 +53,15 @@ Two things to improve still are:
 
 ## Help Documentation
 
-1. In your terminal type in `git clone https://github.com/Coder-Nicki/times_tables_challenge
+1. First check that you have git installed on your terminal. Type in `git --version`. If it outputs a version continue to next step. Otherwise type in `sudo apt install git` and follow instructions.
 
-2. 
+2. In your terminal type in `git clone https://github.com/Coder-Nicki/times_tables_challenge`
+
+3. Next type in `cd times_tables_challenge`
+
+4. Then type in `./wrapper.sh`. This command sets up your environment and installs any needed packages. It then starts the application. 
+
+4. Enjoy using the timesTable_Challenge application.
 
 
 ## References
