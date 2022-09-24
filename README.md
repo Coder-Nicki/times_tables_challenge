@@ -53,6 +53,10 @@ Two things to improve still are:
 
 ## Help Documentation
 
+1. In your terminal type in `git clone https://github.com/Coder-Nicki/times_tables_challenge
+
+2. 
+
 
 ## References
 Guido van Rossum, B. W. N. C., 2001. PEP 8 – Style Guide for Python Code. [Online] 
