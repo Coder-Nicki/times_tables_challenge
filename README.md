@@ -48,9 +48,14 @@ Two things to improve still are:
 |Game mode - User is too slow| If user's time is over the given time than they are exited from the game to the home menu|As expected|Nil|
 |Game mode - The given times are all correct in each level. Check each level. |Each level has a certain time before they fail the level|As expected|Nil|
 |Terminal menu for practice mode|All items call the correct difficulty level|As expected|Nil|
+|Practice mode menu - 'Back to main'|Should return the user to the main menu|As expected|nil|
 |Exit from practice mode|When the user types in 'q' they are exited from the mode back to the main menu|As expected|Nil|
 |Practice mode - End message|An end message is displayed with a correct and incorrect score count on user pressing 'q'|As expected|Nil|
 |Practice mode - User gets to 100 correct answers|User will be exited from practice mode difficulty level|As expected|Nil|
+|Practice mode - User choice|User enters a number in the range 1-12, otherwise they get an error message to try again|As expected|Nil|
+|Practice mode - in user choice there are 20 questions |After the 20 questions an end message is displayed with number of correct and incorrect answers.|As expected|Nil|
+|Practice mode - in user choice correct and incorrect answers correct number | The end message displays the correct number of correct and incorrect answers - Tally should equal 20 if whole round completed|As expected|Nil|
+|Practice mode - answer to questions |user presses a letter (not number or'q' when answering questions)|It is an incorrect answer|In future, could give error message to try again|
 |One minute time|In one minute challenge mode, the user can only answer questions for 1 minute|As expected|Nil|
 |One minute mode - Incorrect answer|If user enters an incorrect answer then they get the message 'wrong' before next question|As expected|Nil|
 |One minute mode - End message|An end message is displayed with how many correct and incorrect answers they got in one minute|As expected|Nil|
