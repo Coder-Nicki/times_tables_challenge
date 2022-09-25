@@ -2,6 +2,9 @@ from random import randint
 import time
 import clearing
 
+class RangeError(Exception):
+    pass
+
 # Practice mode functions
 
 class Practice:
@@ -42,13 +45,18 @@ class Practice:
         num2 = randint(self.x, self.y)
         return num1, num2 
 
-    def practice_number(self):
+def practice_number():
         correct = 0
         incorrect = 0
         number = int(input('What number would you like to practise multiplying by between 1 and 12: '))
+        if not number in range(1, 13):
+            raise RangeError(f'You entered {number}. You must enter a number between 1 and 12')
         while correct < 50:
             number_two = randint(1, 12)
-            user_answer = input(f'{number} * {number_two} = ')
+            try:
+                user_answer = input(f'{number} * {number_two} = ')
+            except RangeError:
+                print('Not in range')
             if number * number_two == user_answer:
                 count += 1
             elif user_answer == 'q':

@@ -6,6 +6,7 @@ from practice_mode import Practice
 from game import gameMode
 import menu
 from greeting import welcome
+import practise_number
 
 # Game mode objects for different levels
 level_one = gameMode('Level One', 1, 5, 30)
@@ -23,14 +24,13 @@ level_ten = gameMode('Level Ten', 10, 900, 600)
 easy = Practice(1, 7)
 medium = Practice(1, 12)
 hard = Practice(1, 20)
-user_choice = Practice(0, 0)
 
 # Main code block
 if __name__ == '__main__':
     name = welcome()
     print(f'Welcome {name} to the timesTables Challenge!')
     while True:
-        time.sleep(3)
+        time.sleep(2)
         clearing.clear()
         choice = menu.main()
         if choice == 'Game Mode':
@@ -75,6 +75,9 @@ if __name__ == '__main__':
         elif choice == 'Practice Mode':
             while True:
                 difficulty = menu.practice_level()
+                if difficulty == 'Back to main menu':
+                    clearing.clear()
+                    break
                 clearing.clear()
                 print('Let\'s get ready...\n')
                 time.sleep(1)
@@ -91,9 +94,9 @@ if __name__ == '__main__':
                     hard.practise_mode()
                     break
                 elif difficulty == 'Choose a number to multiply':
-                    user_choice.practice_number()
-                else:
-                    print('Please type in a lowercase letter e, m or h')
+                    practise_number.practice_number()
+                # elif difficulty == 'Back to main menu':
+                #     break
 
         elif choice == 'One Minute Challenge':
             one_minute_mode.one_minute_race()
