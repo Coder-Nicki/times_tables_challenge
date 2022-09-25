@@ -5,6 +5,8 @@
 ## Overview
 This terminal application allows users to practise their multiplication skills and to race to complete all the levels in time to be crowned the champion. This app is aimed at students of all ages looking to improve their skills in this mathematical ability.
 
+[Slide deck presentation](https://youtu.be/aCs6nwQF6Ow)
+
 ## Code Styling Guide
 
 - [Pep8 styling guide](https://peps.python.org/pep-0008/)
