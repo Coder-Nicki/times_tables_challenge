@@ -5,6 +5,7 @@ import clearing
 from practice_mode import Practice
 from game import gameMode
 import menu
+from greeting import welcome
 
 # Game mode objects for different levels
 level_one = gameMode('Level One', 1, 5, 30)
@@ -26,9 +27,7 @@ user_choice = Practice(0, 0)
 
 # Main code block
 if __name__ == '__main__':
-    clearing.clear()
-    name = input('What is your name: ')
-    clearing.clear()
+    name = welcome()
     print(f'Welcome {name} to the timesTables Challenge!')
     while True:
         time.sleep(3)
