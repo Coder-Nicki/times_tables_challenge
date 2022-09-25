@@ -8,7 +8,7 @@ def main():
     return options[menu_entry_index]
 
 def practice_level():
-    options = ['Easy', 'Medium', 'Hard']
+    options = ['Easy', 'Medium', 'Hard', 'Choose a number to multiply']
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
     print(f'You have selected {options[menu_entry_index]}!')

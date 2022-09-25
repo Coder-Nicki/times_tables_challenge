@@ -22,6 +22,7 @@ level_ten = gameMode('Level Ten', 10, 900, 600)
 easy = Practice(1, 7)
 medium = Practice(1, 12)
 hard = Practice(1, 20)
+user_choice = Practice(0, 0)
 
 # Main code block
 if __name__ == '__main__':
@@ -90,6 +91,8 @@ if __name__ == '__main__':
                 elif difficulty == 'Hard':
                     hard.practise_mode()
                     break
+                elif difficulty == 'Choose a number to multiply':
+                    user_choice.practice_number()
                 else:
                     print('Please type in a lowercase letter e, m or h')
 

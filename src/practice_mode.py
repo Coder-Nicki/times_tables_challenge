@@ -1,5 +1,6 @@
 from random import randint
 import time
+import clearing
 
 # Practice mode functions
 
@@ -40,5 +41,23 @@ class Practice:
         num1 = randint(self.x, self.y)
         num2 = randint(self.x, self.y)
         return num1, num2 
+
+    def practice_number(self):
+        correct = 0
+        incorrect = 0
+        number = int(input('What number would you like to practise multiplying by between 1 and 12: '))
+        while correct < 50:
+            number_two = randint(1, 12)
+            user_answer = input(f'{number} * {number_two} = ')
+            if number * number_two == user_answer:
+                count += 1
+            elif user_answer == 'q':
+                print(f'You got {correct} correct and made {incorrect} errors!')
+                time.sleep(3)
+                clearing.clear()
+                return
+            else:
+                incorrect += 1
+
 
 
